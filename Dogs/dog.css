@@ -1,0 +1,22 @@
+.bg
+{
+    background-image: url(./dog.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #000000;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    margin-top: 250px;
+   
+
+
+}

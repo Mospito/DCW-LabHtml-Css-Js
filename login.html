@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+
+<body class="bg">
+  
+        <form class="container">
+            <h1 style="color: rgb(255, 125, 233); ">Login</h1>
+            <input type="text" name="Username" id="Username" placeholder="Username" class="size"> <br><br>
+            <input type="password" name="Password" id="Password" placeholder="Password" class="size"><br><br>
+            <button type="submit" onclick="getValue()" class="btn btn-primary" class="btn">Login</button>
+        </form>
+
+
+    <audio src="./catsound.mp4" id="catsound01"></audio>
+
+
+</body>
+
+<script>
+    function getValue() {
+        let username = document.getElementById("Username").value;
+        let password = document.getElementById("Password").value;
+        var sound = new Audio("catsound.mp4");
+
+        if (username === "foo" && password === "bar") {
+            alert("เข้าได้เลยฮ่าฟฟฟฟ");
+            window.open("file:///D:/001Study/Year3Therm2/240-311%20Distributed/Activity/LoginWith3Page/cat.html");
+        }
+        else {
+            alert("ไม่ให้เข้าฮ่าฟฟฟฟ รหัสผิดมั้ยเนี้ยะไอชาย");
+            sound.play();
+          
+        }
+    }
+</script>
+<footer>
+    <p>© 2021 Jatury.me CoE PSU HKT</p>
+</footer>
+
+</html>
